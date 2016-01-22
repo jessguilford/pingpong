@@ -11,7 +11,18 @@ var pingPong = function(inputNum) {
       var n = i;
     };
     result = result += n += " ";
-    console.log(result)
   };
   return result;
 };
+
+$(document).ready(function() {
+  $("form#numberentry").submit(function(event) {
+    var inputNum = parseInt($("input#inputNum").val());
+    var result = pingPong(inputNum);
+
+  $("#result").show();
+  $("#output").text(result);
+
+  event.preventDefault();
+  });
+});
