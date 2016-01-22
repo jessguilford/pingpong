@@ -39,11 +39,16 @@ var pingPong = function(inputNum) {
 
 $(document).ready(function() {
   $("form#numberentry").submit(function(event) {
+    $("#resultheader").hide();
     var inputNum = parseInt($("input#inputNum").val());
     var result = pingPong(inputNum);
 
-  $("#result").show();
+  $("#resultheader").slideDown();
   $("#output").text(result);
+
+  var fancyPing = '<span class="fancyping">ping</span>';
+  var newPing = $("p#output").text().replace(/ping/gi, fancyPing);
+  $("p#output").html(newPing);
 
   event.preventDefault();
   });
