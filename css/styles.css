@@ -1,0 +1,59 @@
+body {
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #191919;
+}
+
+h1:hover {
+  color: #30c33c;
+}
+
+h3 {
+  font-size: .8em;
+  padding-left: 10px;
+  color: #fff;
+  background-color: #191919;
+  max-width: 100%;
+  text-align: center;
+}
+
+.main {
+  min-height: 300px;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+.banner {
+  min-height: 100px;
+  background-image: url("../images/8bitheaderw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #30c33c;
+}
+h1.header {
+  color: #fff;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#resultheader {
+  display: none;
+}
+
+.fancyping {
+  color: #5f8af0;
+  font-weight: bold;
+}
+
+.fancypong {
+  color: #1f38ec;
+  font-weight: bold;
+}
+
+.fancypingpong {
+  color: #f748ba;
+  font-weight: bold;
+}
