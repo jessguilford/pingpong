@@ -47,7 +47,8 @@ $(document).ready(function() {
   $("#output").text(result);
 
   var fancyPing = '<span class="fancyping">ping</span>';
-  var newPing = $("p#output").text().replace(/ping/gi, fancyPing);
+  var fancyPong = '<span class="fancypong">pong</span>';
+  var newPing = $("p#output").text().replace(/ping/gi, fancyPing).replace(/pong/gi, fancyPong);
   $("p#output").html(newPing);
 
   event.preventDefault();
