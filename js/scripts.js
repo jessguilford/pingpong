@@ -10,19 +10,8 @@ var pingPong = function(inputNum) {
     } else {
       var n = i;
     };
-    result += n;
+    result = result += n += " ";
+    console.log(result)
   };
   return result;
 };
-
-//
-// var pingPong = function(inputNum) {
-//   var result = ""
-//   for (var i =1; i <= inputNum; i ++) {
-//     if (i % 3 === 0) {
-//       i = i"ping";
-//     }
-//     result += i;
-//   };
-//   return result;
-// };
