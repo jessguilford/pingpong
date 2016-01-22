@@ -1,5 +1,6 @@
 h1 {
   font-family: 'Orbitron', sans-serif;
+  color: #21992b;
 }
 
 .container {
@@ -13,11 +14,16 @@ h1 {
 }
 
 .fancyping {
-  color: #FDAE84;
+  color: #5f8af0;
   font-weight: bold;
 }
 
 .fancypong {
-  color: #8bcbc8;
+  color: #1f38ec;
+  font-weight: bold;
+}
+
+.fancypingpong {
+  color: #f748ba;
   font-weight: bold;
 }

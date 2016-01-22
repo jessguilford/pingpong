@@ -48,8 +48,9 @@ $(document).ready(function() {
 
   var fancyPing = '<span class="fancyping">ping</span>';
   var fancyPong = '<span class="fancypong">pong</span>';
-  var newPing = $("p#output").text().replace(/ping/gi, fancyPing).replace(/pong/gi, fancyPong);
-  $("p#output").html(newPing);
+  var fancyPingPong = '<span class="fancypingpong">pingpong</span>';
+  var newPings = $("p#output").text().replace(/\bping\b/gi, fancyPing).replace(/\bpong\b/gi, fancyPong).replace(/pingpong/gi, fancyPingPong);
+  $("p#output").html(newPings);
 
   event.preventDefault();
   });
