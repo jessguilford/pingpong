@@ -1,7 +1,8 @@
 var pingPong = function(inputNum) {
-  var result = ""
+  var result = "";
+  var n = "";
     if (inputNum > 0) {
-      for (var i =1; i <= inputNum; i ++) {
+      for (var i = 1; i <= inputNum; i ++) {
         if (i % 15 === 0) {
           n = "pingpong";
         } else if (i % 3 === 0) {
@@ -9,14 +10,29 @@ var pingPong = function(inputNum) {
         } else if (i % 5 === 0) {
           n = "pong";
         } else {
-          var n = i;
+          n = i;
         };
         result = result += n += " ";
       };
+    } else if (inputNum < 0) {
+        for (var i = -1; i >= inputNum; i --) {
+          if (i % 3 === 0) {
+            n = "ping";
+          } else if (i % 5 === 0) {
+            n = "pong";
+          } else if (i % 15 === 0) {
+            n = "pingpong";
+          } else {
+          n = i;
+          };
+          result = result += n += " ";
+        };
     } else if (isNaN(inputNum) === true) {
       result = result += "Sorry, Ping Pong needs a number to play";
+    } else if (inputNum === 0) {
+      result = "Give me a break.";
     } else {
-      result = result += "Something went terribly awry, please try again"
+      result = result += "Something went terribly awry, please try again";
     };
   return result;
 };

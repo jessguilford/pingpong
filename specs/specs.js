@@ -14,4 +14,10 @@ describe("pingPong", function() {
   it("returns a message if user input is NaN", function() {
     expect(pingPong("Hi")).to.equal("Sorry, Ping Pong needs a number to play");
   });
+  it("counts from -1 to negative input numbers", function() {
+    expect(pingPong("-2")).to.equal("-1 -2 ");
+  });
+  it("treats negative numbers divisible by 3, 5, and 15 as above", function() {
+    expect(pingPong("-5")).to.equal("-1 -2 ping -4 pong ");
+  });
 });
