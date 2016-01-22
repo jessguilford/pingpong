@@ -11,4 +11,7 @@ describe("pingPong", function() {
   it("also replaces numbers divisible by 15 with pingpong", function() {
     expect(pingPong("15")).to.equal("1 2 ping 4 pong ping 7 8 ping pong 11 ping 13 14 pingpong ");
   });
+  it("returns a message if user input is NaN", function() {
+    expect(pingPong("Hi")).to.equal("Sorry, Ping Pong needs a number to play");
+  });
 });
